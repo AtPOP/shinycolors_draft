@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample D</title>
+    <style>
+		table {
+			border-collapse: collapse;
+			margin: auto;
+            font-size: 12px
+		}
+        th {
+            font-size: 12px
+        }
+		td {
+			border: 1px solid black;
+			width: 250px;
+			height: 50px;
+            font-size: 12px;
+			text-align: center;
+			vertical-align: middle;
+		}
+        button {
+            margin-right: 10px;
+            margin-left: 1px;
+            cursor: pointer;
+        }
+        #myTextBox {
+			resize: vertical; /* テキストボックスの縦方向のみをリサイズ可能にする */
+			height: 300px; /* テキストボックスの初期の高さを設定する */
+			width: 500px; /* テキストボックスの初期の幅を設定する */
+            font-size: 12px
+		}
+	</style>
+    <script>
+		function buttonMouseUp(button) {
+            var td = button.parentNode;
+            if (td.style.backgroundColor == "white") {
+                td.style.backgroundColor = "yellow";
+            } else if (td.style.backgroundColor == "yellow") {
+                td.style.backgroundColor = "gray";
+            } else if (td.style.backgroundColor == "gray") {
+                td.style.backgroundColor = "white";
+            }
+		}
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>全体曲</th>
+            <th>イルミネ</th>
+            <th>アンティーカ</th>
+            <th>放クラ</th>
+            <th>アルストロメリア</th>
+            <th>ストレイライト</th>
+            <th>ノクチル</th>
+            <th>シーズ</th>
+            <th>その他</th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">BRILLI@NT WING</th>
+            <td style="background-color: white;" id="spread-the-wings"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Spread the Wings!!</td>
+            <td style="background-color: white;" id="hikari-no-destination"  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ヒカリのdestination</td>
+            <td style="background-color: white;" id="babelcity-graze"        ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>バベルシティ・グレイス</td>
+            <td style="background-color: white;" id="yumesaki-after-school"  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>夢咲きAfter school</td>
+            <td style="background-color: white;" id="alstroemeria"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>アルストロメリア</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="multicolored-sky"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Multicolored Sky</td>
+            <td style="background-color: white;" id="niji-ni-nare"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>虹になれ</td>
+            <td style="background-color: white;" id="genwaku-silhouette"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>幻惑SILHOUETTE</td>
+            <td style="background-color: white;" id="taiyo-kiss"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>太陽キッス</td>
+            <td style="background-color: white;" id="hapilili"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ハピリリ</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">FR@GMENT WING</th>
+            <td style="background-color: white;" id="amvitious-eve"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Ambitious Eve</td>
+            <td style="background-color: white;" id="we-can-go-now"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>We can go now!</td>
+            <td style="background-color: white;" id="neo-theory-fantasy"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>NEO THEORY FANTASY</td>
+            <td style="background-color: white;" id="beach-braver"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ビーチブレイバー</td>
+            <td style="background-color: white;" id="bloomy"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Bloomy!</td>
+            <td style="background-color: white;" id="wandering-dream-chaser" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Wandering Dream Chaser</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="itsuka-shiny-days"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>いつか Shiny Days</td>
+            <td style="background-color: white;" id="triangle"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>トライアングル</td>
+            <td style="background-color: white;" id="labyrinth-resistance"   ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ラビリンス・レジスタンス</td>
+            <td style="background-color: white;" id="yorimiti-sunset"        ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>よりみちサンセット</td>
+            <td style="background-color: white;" id="love-addiction"         ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Love Addiction</td>
+            <td style="background-color: white;" id="transcending-the-world" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Transcending The World</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">GR@DATE WING</th>
+            <td style="background-color: white;" id="shyno-glaphy"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>シャイノグラフィ</td>
+            <td style="background-color: white;" id="twinkle-way"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Twinkle way</td>
+            <td style="background-color: white;" id="black-reverie"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Black Reverie</td>
+            <td style="background-color: white;" id="itsutsuza-ryuseigun"    ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>五ツ座流星群</td>
+            <td style="background-color: white;" id="double-effect"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ダブル・イフェクト</td>
+            <td style="background-color: white;" id="hide-and-attack"        ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Hide & Attack</td>
+            <td style="background-color: white;" id="itsudatte-bokuraha"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>いつだって僕らは</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="dye-the-sky"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Dye the sky.</td>
+            <td style="background-color: white;" id="happy-funny-lucky"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Happy Funny Lucky</td>
+            <td style="background-color: white;" id="junpaku-traumerei"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>純白トロイメライ</td>
+            <td style="background-color: white;" id="gakuenkakumei-yoakemae" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>学祭革命夜明け前</td>
+            <td style="background-color: white;" id="anniversary"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Anniversary</td>
+            <td style="background-color: white;" id="destined-rival"         ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Destined Rival</td>
+            <td style="background-color: white;" id="ano-hanano-youni"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>あの花のように</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">L@YERED WING</th>
+            <td style="background-color: white;" id="resonance"                  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Resonance⁺</td>
+            <td style="background-color: white;" id="prisism"                    ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>PRISISM</td>
+            <td style="background-color: white;" id="abyss-of-conflict"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>abyss of conflict</td>
+            <td style="background-color: white;" id="climax-island"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>クライマックスアイランド</td>
+            <td style="background-color: white;" id="pastelcolor-pascalacolor"   ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>パステルカラー パスカラカラー</td>
+            <td style="background-color: white;" id="another-rampage"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Another Rampage</td>
+            <td style="background-color: white;" id="bokuradake-no-mirai-no-sora"><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>僕らだけの未来の空</td>
+            <td style="background-color: white;" id="oh-my-god"                  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>OH MY GOD</td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="color-days"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Color Days</td>
+            <td style="background-color: white;" id="smile-symphonia"        ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>スマイルシンフォニア</td>
+            <td style="background-color: white;" id="kakumei-sinkaron"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>革命進化論</td>
+            <td style="background-color: white;" id="haikei-timecapsule"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>拝啓タイムカプセル</td>
+            <td style="background-color: white;" id="love-bonappetite"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ラブ・ボナペティート</td>
+            <td style="background-color: white;" id="timeless-shooting-star" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Timeless Shooting Star</td>
+            <td style="background-color: white;" id="imashikanai-shunkan-wo" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>今しかない瞬間を</td>
+            <td style="background-color: white;" id="fly-and-fly"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Fly and Fly</td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">PANOR@MA WING</th>
+            <td style="background-color: white;" id="niji-no-yukue"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>虹の行方</td>
+            <td style="background-color: white;" id="felice"                     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>FELICE</td>
+            <td style="background-color: white;" id="hudosei-innocence"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>浮動性イノセンス</td>
+            <td style="background-color: white;" id="issen-ha-kimi-ga-mitibiku"  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>一閃は君が導く</td>
+            <td style="background-color: white;" id="very-berry-lpve"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>VERY BERRY LOVE</td>
+            <td style="background-color: white;" id="tracing-defender"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Tracing Defender</td>
+            <td style="background-color: white;" id="catch-the-breeze"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Catch the Breeze</td>
+            <td style="background-color: white;" id="fashionable"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Fashionable</td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="daybreak-age"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Daybreak Age</td>
+            <td style="background-color: white;" id="illuminate-concert"         ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>イルミネイトコンサート</td>
+            <td style="background-color: white;" id="gusya-no-dokuhaku"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>愚者の独白</td>
+            <td style="background-color: white;" id="cat-squad"                  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>キャットスクワッド</td>
+            <td style="background-color: white;" id="give-me-some-more"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Give me some more...</td>
+            <td style="background-color: white;" id="overdrive-emotion"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Overdrive Emotion</td>
+            <td style="background-color: white;" id="asphalt-wo-narashite"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>アスファルトを鳴らして</td>
+            <td style="background-color: white;" id="bouncy-girl"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Bouncy Girl</td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="5">COLORFUL FE@THERS</th>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="arittake-no-kagayakide"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ありったけの輝きで</td>
+            <td style="background-color: white;" id="apoint-signal"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>アポイント・シグナル</td>
+            <td style="background-color: white;" id="chocodate-sunday"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>チョコデート・サンデー</td>
+            <td style="background-color: white;" id="sweet-memories"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Sweet Memories</td>
+            <td style="background-color: white;" id="hosi-wo-mezashite"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>星をめざして</td>
+            <td style="background-color: white;" id="yumemitori"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>夢見鳥</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="planisphere"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>プラニスフィア ~planisphere~</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="slow-motion"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>スローモーション</td>
+            <td style="background-color: white;" id="tasogare-identity"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>誰ソ彼アイデンティティー</td>
+            <td style="background-color: white;" id="hanamaru-badge"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ハナマルバッジ</td>
+            <td style="background-color: white;" id="mata-ashita"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>また明日</td>
+            <td style="background-color: white;" id="going-my-way"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Going my way</td>
+            <td style="background-color: white;" id="watashi-no-shujinko-ha-watashidakara"><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>わたしの主人公はわたしだから!</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="reflect-sign"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>リフレクトサイン</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="harebare"                   ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>HAREBARE!!</td>
+            <td style="background-color: white;" id="plastic-umbrella"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>プラスチック・アンブレラ</td>
+            <td style="background-color: white;" id="tokosaki-no-niwa"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>常咲の庭</td>
+            <td style="background-color: white;" id="darling-you"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Darling you!</td>
+            <td style="background-color: white;" id="sos"                        ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SOS</td>
+            <td style="background-color: white;" id="aozora-cider"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>あおぞらサイダー</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="solar-way"                  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SOLAR WAY</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="setsu-getsu-hu-ka"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>雪・月・風・花</td>
+            <td style="background-color: white;" id="damascus-cocktail"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Damascus Cocktail</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="statice"                    ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>statice</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="senya-aria"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>千夜アリア</td>
+            <td style="background-color: white;" id="kajunse-breach"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>過純性ブリーチ</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="8">OTHERS</th>
+            <td style="background-color: white;" id="snow-flakes-memories"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SNOW FLAKES MEMORIES</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="zettaiseigi-every-day"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>絶対正義EVERY DAY</td>
+            <td style="background-color: white;" id="debitaro-no-uta"            ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>デビ太郎のうた</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="killer-mission"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Killer×Mission</td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="lets-get-a-chance"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Let’s get a chance</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="aiai-gakusya"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>相合学舎</td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="futurity-smile"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>FUTURITY SMILE</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="secret-utopia"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Secret utopIA.</td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="sweet-step"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SWEET STEP</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="kamisama-ha-sinda-tte"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>神様は死んだ、って</td>
+        </tr>
+        <tr>
+            <td style="background-color: white;" id="nandodemo-waraou"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>なんどでも笑おう</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="283-taisou"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>283体操</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="shiny-exercise"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>シャイニーエクササイズ</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="voyager"                    ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>VOY@GER</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="crystaloud"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>CRYST@LOUD</td>
+        </tr>
+
+	<div style="display:flex;">
+		<fieldset>
+			<legend>WINGシリーズ:</legend>
+            <input type="checkbox" checked>BRILLI@NT WING   <br>
+			<input type="checkbox" checked>FR@GMENT WING    <br>
+            <input type="checkbox" checked>GR@DATE WING     <br>
+            <input type="checkbox" checked>L@YERED WING     <br>
+            <input type="checkbox" checked>PANOR@MA WING    <br>
+		</fieldset>
+		<fieldset>
+			<legend>COLORFUL FE@THERSシリーズ:</legend>
+			<input type="checkbox" checked>COLORFUL FE@THERS -Stela <br>
+			<input type="checkbox" checked>COLORFUL FE@THERS -Luna  <br>
+            <input type="checkbox" checked>COLORFUL FE@THERS -Sol   <br>
+		</fieldset>
+        <fieldset>
+			<legend>OTHERS:</legend>
+			<input type="checkbox" checked>SE@SONAL WINTER  <br>
+			<input type="checkbox" checked>FUTURITY SMILE   <br>
+            <input type="checkbox" checked>SWEET STEP       <br>
+            <input type="checkbox" checked>Synthe-side      <br>
+            <input type="checkbox" checked>神様は死んだ、って   <br>
+            <input type="checkbox" checked>デビ太郎 VS ジャスティスV<br>
+            <input type="checkbox" checked>B☆Health        <br>
+            <input type="checkbox" checked>THE IDOLM@STER FIVE STARS!!!!!<br>
+            <input type="checkbox" checked>CRYST@LOUD       <br>
+		</fieldset>
+        <textarea id="myTextBox" onfocus="if (this.value=='メモ欄') this.value='';" onblur="if (this.value=='') this.value='メモ欄';">メモ欄</textarea>
+	</div>
+</body>
+</html>
