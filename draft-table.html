@@ -42,6 +42,161 @@
                 td.style.backgroundColor = "white";
             }
 		}
+        function cbOnChange(series) {
+            var checkbox = document.getElementById(series.id);
+            if (series.id == "brilliant_wing") {
+                var target_songs = ["spread-the-wings"      ,
+                                    "multicolored-sky"      ,
+                                    "hikari-no-destination" ,
+                                    "babelcity-graze"       ,
+                                    "yumesaki-after-school" ,
+                                    "alstroemeria"          ,
+                                    "niji-ni-nare"          ,
+                                    "genwaku-silhouette"    ,
+                                    "taiyo-kiss"            ,
+                                    "hapilili"]
+            }
+            if (series.id == "fragment_wing") {
+                var target_songs = ["amvitious-eve",
+                                    "we-can-go-now"         ,
+                                    "neo-theory-fantasy"    ,
+                                    "beach-braver"          ,
+                                    "bloomy"                ,
+                                    "wandering-dream-chaser",
+                                    "itsuka-shiny-days"     ,
+                                    "triangle"              ,
+                                    "labyrinth-resistance"  ,
+                                    "yorimiti-sunset"       ,
+                                    "love-addiction"        ,
+                                    "transcending-the-world"]
+            }
+            if (series.id == "gradate_wing") {
+                var target_songs = ["shyno-glaphy"          ,
+                                    "twinkle-way"           ,
+                                    "black-reverie"         ,
+                                    "itsutsuza-ryuseigun"   ,
+                                    "double-effect"         ,
+                                    "hide-and-attack"       ,
+                                    "itsudatte-bokuraha"    ,
+                                    "dye-the-sky"           ,
+                                    "happy-funny-lucky"     ,
+                                    "junpaku-traumerei"     ,
+                                    "gakuenkakumei-yoakemae",
+                                    "anniversary"           ,
+                                    "destined-rival"        ,
+                                    "ano-hanano-youni"      ]
+            }
+            if (series.id == "layered_wing") {
+                var target_songs = ["resonance"                     ,
+                                    "prisism"                       ,
+                                    "abyss-of-conflict"             ,
+                                    "climax-island"                 ,
+                                    "pastelcolor-pascalacolor"      ,
+                                    "another-rampage"               ,
+                                    "bokuradake-no-mirai-no-sora"   ,
+                                    "oh-my-god"                     ,
+                                    "color-days"                    ,
+                                    "smile-symphonia"               ,
+                                    "kakumei-sinkaron"              ,
+                                    "haikei-timecapsule"            ,
+                                    "love-bonappetite"              ,
+                                    "timeless-shooting-star"        ,
+                                    "imashikanai-shunkan-wo"        ,
+                                    "fly-and-fly"                   ]
+            }
+            if (series.id == "panorama_wing") {
+                var target_songs = ["niji-no-yukue"             ,
+                                    "felice"                    ,
+                                    "hudosei-innocence"         ,
+                                    "issen-ha-kimi-ga-mitibiku" ,
+                                    "very-berry-lpve"           ,
+                                    "tracing-defender"          ,
+                                    "catch-the-breeze"          ,
+                                    "fashionable"               ,
+                                    "daybreak-age"              ,
+                                    "illuminate-concert"        ,
+                                    "gusya-no-dokuhaku"         ,
+                                    "cat-squad"                 ,
+                                    "give-me-some-more"         ,
+                                    "overdrive-emotion"         ,
+                                    "asphalt-wo-narashite"      ,
+                                    "bouncy-girl"               ]
+            }
+            if (series.id == "cf_stela") {
+                var target_songs = ["arittake-no-kagayakide"    ,
+                                    "apoint-signal"             ,
+                                    "chocodate-sunday"          ,
+                                    "sweet-memories"            ,
+                                    "hosi-wo-mezashite"         ,
+                                    "yumemitori"                ,
+                                    "planisphere"               ,
+                                    "hanamaru-badge"            ]
+            }
+            if (series.id == "cf_luna") {
+                var target_songs = ["slow-motion"               ,
+                                    "tasogare-identity"         ,
+                                    "mata-ashita"               ,
+                                    "going-my-way"              ,
+                                    "watashi-no-shujinko-ha-watashidakara",
+                                    "reflect-sign"              ,
+                                    "plastic-umbrella"          ,
+                                    "tokosaki-no-niwa"          ,
+                                    "setsu-getsu-hu-ka"         ]
+            }
+            if (series.id == "cf_sol") {
+                var target_songs = ["harebare"                  ,
+                                    "darling-you"               ,
+                                    "sos"                       ,
+                                    "aozora-cider"              ,
+                                    "solar-way"                 ,
+                                    "damascus-cocktail"         ,
+                                    "statice"                   ,
+                                    "senya-aria"                ,
+                                    "kajunse-breach"            ]
+            }
+            if (series.id == "seasonal_winter") {
+                var target_songs = ["snow-flakes-memories"      ,
+                                    "lets-get-a-chance"         ]
+            }
+            if (series.id == "futurity_smile") {
+                var target_songs = ["futurity-smile"]
+            }
+            if (series.id == "sweet_step") {
+                var target_songs = ["sweet-step"]
+            }
+            if (series.id == "synthe_side") {
+                var target_songs = ["killer-mission"    ,
+                                    "aiai-gakusya"      ,
+                                    "secret-utopia"     ]
+            }
+            if (series.id == "kamisama_shinda") {
+                var target_songs = ["kamisama-ha-sinda-tte"]
+            }
+            if (series.id == "debi_bs_justice") {
+                var target_songs = ["debitaro-no-uta"       ,
+                                    "zettaiseigi-every-day" ]
+            }
+            if (series.id == "b_health") {
+                var target_songs = ["283-taisou"        ,
+                                    "shiny-exercise"    ]
+            }
+            if (series.id == "five_stars") {
+                var target_songs = ["voyager"           ,
+                                    "nandodemo-waraou"  ]
+            }
+            if (series.id == "single_crystaloud") {
+                var target_songs = ["crystaloud"]
+            }
+
+            target_songs.forEach(function(current) {
+                var td = document.getElementById(current)
+                if (checkbox.checked) {
+                    td.style.backgroundColor = "white";
+                } else {
+                    td.style.backgroundColor = "gray";
+                }
+            });
+        }
     </script>
 </head>
 
@@ -49,15 +204,15 @@
     <table border="1">
         <tr>
             <th></th>
-            <th>全体曲</th>
-            <th>イルミネ</th>
-            <th>アンティーカ</th>
-            <th>放クラ</th>
-            <th>アルストロメリア</th>
-            <th>ストレイライト</th>
-            <th>ノクチル</th>
-            <th>シーズ</th>
-            <th>その他</th>
+            <th><input type="checkbox" checked id="unit_all"        onchange="cbOnChange(this)">全体曲</th>
+            <th><input type="checkbox" checked id="unit_illumine"   onchange="cbOnChange(this)">イルミネ</th>
+            <th><input type="checkbox" checked id="unit_lantica"    onchange="cbOnChange(this)">アンティーカ</th>
+            <th><input type="checkbox" checked id="unit_ho-cla"     onchange="cbOnChange(this)">放クラ</th>
+            <th><input type="checkbox" checked id="unit_alst"       onchange="cbOnChange(this)">アルストロメリア</th>
+            <th><input type="checkbox" checked id="unit_stray"      onchange="cbOnChange(this)">ストレイライト</th>
+            <th><input type="checkbox" checked id="unit_noctchill"  onchange="cbOnChange(this)">ノクチル</th>
+            <th><input type="checkbox" checked id="unit_shhis"      onchange="cbOnChange(this)">シーズ</th>
+            <th><input type="checkbox" checked id="unit_others"     onchange="cbOnChange(this)">その他</th>
         </tr>
 
         <tr>
@@ -330,29 +485,29 @@
 	<div style="display:flex;">
 		<fieldset>
 			<legend>WINGシリーズ:</legend>
-            <input type="checkbox" checked>BRILLI@NT WING   <br>
-			<input type="checkbox" checked>FR@GMENT WING    <br>
-            <input type="checkbox" checked>GR@DATE WING     <br>
-            <input type="checkbox" checked>L@YERED WING     <br>
-            <input type="checkbox" checked>PANOR@MA WING    <br>
+            <input type="checkbox" checked id="brilliant_wing" onchange="cbOnChange(this)">BRILLI@NT WING   <br>
+			<input type="checkbox" checked id="fragment_wing"  onchange="cbOnChange(this)">FR@GMENT WING    <br>
+            <input type="checkbox" checked id="gradate_wing"   onchange="cbOnChange(this)">GR@DATE WING     <br>
+            <input type="checkbox" checked id="layered_wing"   onchange="cbOnChange(this)">L@YERED WING     <br>
+            <input type="checkbox" checked id="panorama_wing"  onchange="cbOnChange(this)">PANOR@MA WING    <br>
 		</fieldset>
 		<fieldset>
 			<legend>COLORFUL FE@THERSシリーズ:</legend>
-			<input type="checkbox" checked>COLORFUL FE@THERS -Stela <br>
-			<input type="checkbox" checked>COLORFUL FE@THERS -Luna  <br>
-            <input type="checkbox" checked>COLORFUL FE@THERS -Sol   <br>
+			<input type="checkbox" checked id="cf_stela" onchange="cbOnChange(this)">COLORFUL FE@THERS -Stela <br>
+			<input type="checkbox" checked id="cf_luna"  onchange="cbOnChange(this)">COLORFUL FE@THERS -Luna  <br>
+            <input type="checkbox" checked id="cf_sol"   onchange="cbOnChange(this)">COLORFUL FE@THERS -Sol   <br>
 		</fieldset>
         <fieldset>
 			<legend>OTHERS:</legend>
-			<input type="checkbox" checked>SE@SONAL WINTER  <br>
-			<input type="checkbox" checked>FUTURITY SMILE   <br>
-            <input type="checkbox" checked>SWEET STEP       <br>
-            <input type="checkbox" checked>Synthe-side      <br>
-            <input type="checkbox" checked>神様は死んだ、って   <br>
-            <input type="checkbox" checked>デビ太郎 VS ジャスティスV<br>
-            <input type="checkbox" checked>B☆Health        <br>
-            <input type="checkbox" checked>THE IDOLM@STER FIVE STARS!!!!!<br>
-            <input type="checkbox" checked>CRYST@LOUD       <br>
+			<input type="checkbox" checked id="seasonal_winter"   onchange="cbOnChange(this)">SE@SONAL WINTER  <br>
+			<input type="checkbox" checked id="futurity_smile"    onchange="cbOnChange(this)">FUTURITY SMILE   <br>
+            <input type="checkbox" checked id="sweet_step"        onchange="cbOnChange(this)">SWEET STEP       <br>
+            <input type="checkbox" checked id="synthe_side"       onchange="cbOnChange(this)">Synthe-side      <br>
+            <input type="checkbox" checked id="kamisama_shinda"   onchange="cbOnChange(this)">神様は死んだ、って   <br>
+            <input type="checkbox" checked id="debi_bs_justice"   onchange="cbOnChange(this)">デビ太郎 VS ジャスティスV<br>
+            <input type="checkbox" checked id="b_health"          onchange="cbOnChange(this)">B☆Health        <br>
+            <input type="checkbox" checked id="five_stars"        onchange="cbOnChange(this)">THE IDOLM@STER FIVE STARS!!!!!<br>
+            <input type="checkbox" checked id="single_crystaloud" onchange="cbOnChange(this)">CRYST@LOUD       <br>
 		</fieldset>
         <textarea id="myTextBox" onfocus="if (this.value=='メモ欄') this.value='';" onblur="if (this.value=='') this.value='メモ欄';">メモ欄</textarea>
 	</div>
