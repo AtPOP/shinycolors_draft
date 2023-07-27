@@ -122,6 +122,20 @@
                                     "asphalt-wo-narashite"      ,
                                     "bouncy-girl"               ]
             }
+            if (series.id == "canvas") {
+                var target_songs = ["forward-march"             ,
+                                    "toaru-eiyutachino-monogatari",
+                                    "hanasaka-saisai"           ,
+                                    "message"                   ,
+                                    "hosiga-nagarete"           ,
+                                    "unsung-heroes"             ,
+                                    "zenryoku-anser"            ,
+                                    "love-letter"               ,
+                                    "brightest-white"           ,
+                                    "yusaisyoku-yuriika"        ,
+                                    "himekuri-mosaic"           ,
+                                    "gradation"                 ]
+            }
             if (series.id == "cf_stela") {
                 var target_songs = ["arittake-no-kagayakide"    ,
                                     "apoint-signal"             ,
@@ -153,6 +167,10 @@
                                     "statice"                   ,
                                     "senya-aria"                ,
                                     "kajunse-breach"            ]
+            }
+            if (series.id == "cf_shhis") {
+                var target_songs = ["fairy-girl"                ,
+                                    "look-up-to-the-sky"        ]
             }
             if (series.id == "seasonal_winter") {
                 var target_songs = ["snow-flakes-memories"      ,
@@ -186,6 +204,9 @@
             }
             if (series.id == "single_crystaloud") {
                 var target_songs = ["crystaloud"]
+            }
+            if (series.id == "single_shiny-stories") {
+                var target_songs = ["shiny-stories"]
             }
 
             target_songs.forEach(function(current) {
@@ -336,6 +357,41 @@
         </tr>
 
         <tr>
+            <th rowspan="3">CANVASシリーズ</th>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="forward-march"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Forward March!!!</td>
+            <td style="background-color: white;" id="toaru-eiyutachino-monogatari" ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>とある英雄たちの物語</td>
+            <td style="background-color: white;" id="hanasaka-saisai"      ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ハナサカサイサイ</td>
+            <td style="background-color: white;" id="message"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>メッセージ</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="hosiga-nagarete"         ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>星が流れて</td>
+            <td style="background-color: white;" id="unsung-heroes"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Unsung Heroes</td>
+            <td style="background-color: white;" id="zenryoku-anser"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>全力アンサー</td>
+            <td style="background-color: white;" id="love-letter"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Love Letter</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="brightest-white"         ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>BRIGHTEST WHITE</td>
+            <td style="background-color: white;" id="yusaisyoku-yuriika"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>有彩色ユリイカ</td>
+            <td style="background-color: white;" id="himekuri-mosaic"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ひめくりモザイク</td>
+            <td style="background-color: white;" id="gradation"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>グラデーション</td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+        </tr>
+
+        <tr>
             <th rowspan="5">COLORFUL FE@THERS</th>
             <td style="background-color: gray;"></td>
             <td style="background-color: white;" id="arittake-no-kagayakide"     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ありったけの輝きで</td>
@@ -344,7 +400,7 @@
             <td style="background-color: white;" id="sweet-memories"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Sweet Memories</td>
             <td style="background-color: white;" id="hosi-wo-mezashite"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>星をめざして</td>
             <td style="background-color: white;" id="yumemitori"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>夢見鳥</td>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="fairy-girl"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>フェアリー・ガール</td>
             <td style="background-color: white;" id="planisphere"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>プラニスフィア ~planisphere~</td>
         </tr>
         <tr>
@@ -355,7 +411,7 @@
             <td style="background-color: white;" id="mata-ashita"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>また明日</td>
             <td style="background-color: white;" id="going-my-way"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Going my way</td>
             <td style="background-color: white;" id="watashi-no-shujinko-ha-watashidakara"><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>わたしの主人公はわたしだから!</td>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="look-up-to-the-sky"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Look up to the sky</td>
             <td style="background-color: white;" id="reflect-sign"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>リフレクトサイン</td>
         </tr>
         <tr>
@@ -393,7 +449,7 @@
         </tr>
 
         <tr>
-            <th rowspan="8">OTHERS</th>
+            <th rowspan="9">OTHERS</th>
             <td style="background-color: white;" id="snow-flakes-memories"       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SNOW FLAKES MEMORIES</td>
             <td style="background-color: gray;"></td>
             <td style="background-color: gray;"></td>
@@ -481,6 +537,17 @@
             <td style="background-color: gray;"></td>
             <td style="background-color: white;" id="crystaloud"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>CRYST@LOUD</td>
         </tr>
+        <tr>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="shiny-stories"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Shiny Stories</td>
+        </tr>
 
 	<div style="display:flex;">
 		<fieldset>
@@ -490,12 +557,14 @@
             <input type="checkbox" checked id="gradate_wing"   onchange="cbOnChange(this)">GR@DATE WING     <br>
             <input type="checkbox" checked id="layered_wing"   onchange="cbOnChange(this)">L@YERED WING     <br>
             <input type="checkbox" checked id="panorama_wing"  onchange="cbOnChange(this)">PANOR@MA WING    <br>
+            <input type="checkbox" checked id="canvas"         onchange="cbOnChange(this)">CANVASシリーズ    <br>
 		</fieldset>
 		<fieldset>
 			<legend>COLORFUL FE@THERSシリーズ:</legend>
 			<input type="checkbox" checked id="cf_stela" onchange="cbOnChange(this)">COLORFUL FE@THERS -Stela <br>
 			<input type="checkbox" checked id="cf_luna"  onchange="cbOnChange(this)">COLORFUL FE@THERS -Luna  <br>
             <input type="checkbox" checked id="cf_sol"   onchange="cbOnChange(this)">COLORFUL FE@THERS -Sol   <br>
+            <input type="checkbox" checked id="cf_shhis" onchange="cbOnChange(this)">COLORFUL FE@THERS -SHHis   <br>
 		</fieldset>
         <fieldset>
 			<legend>OTHERS:</legend>
@@ -508,6 +577,7 @@
             <input type="checkbox" checked id="b_health"          onchange="cbOnChange(this)">B☆Health        <br>
             <input type="checkbox" checked id="five_stars"        onchange="cbOnChange(this)">THE IDOLM@STER FIVE STARS!!!!!<br>
             <input type="checkbox" checked id="single_crystaloud" onchange="cbOnChange(this)">CRYST@LOUD       <br>
+            <input type="checkbox" checked id="single_shiny-stories" onchange="cbOnChange(this)">Shiny Stories       <br>
 		</fieldset>
         <textarea id="myTextBox" onfocus="if (this.value=='メモ欄') this.value='';" onblur="if (this.value=='') this.value='メモ欄';">メモ欄</textarea>
 	</div>
