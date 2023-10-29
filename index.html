@@ -134,7 +134,19 @@
                                     "brightest-white"           ,
                                     "yusaisyoku-yuriika"        ,
                                     "himekuri-mosaic"           ,
-                                    "gradation"                 ]
+                                    "gradation"                 ,
+                                    "imitation-ghost"           ,
+                                    "burn-burn"                 ,
+                                    "start-up-stand-up"         ,
+                                    "reflection"                ,
+                                    "yumegayumejanakunaru-sonohimade",
+                                    "ao-to-orange"              ,
+                                    "forbidden-paradise"        ,
+                                    "sweetest-bite"             ,
+                                    "white-story"               ,
+                                    "mujikaku-apriori"          ,
+                                    "kudaranaiya"               ,
+                                    "heikosen-no-bigaku"        ]
             }
             if (series.id == "cf_stela") {
                 var target_songs = ["arittake-no-kagayakide"    ,
@@ -207,6 +219,9 @@
             }
             if (series.id == "single_shiny-stories") {
                 var target_songs = ["shiny-stories"]
+            }
+            if (series.id == "single_hoshi-no-koe") {
+                var target_songs = ["hoshi-no-koe"]
             }
 
             target_songs.forEach(function(current) {
@@ -363,10 +378,10 @@
             <td style="background-color: white;" id="toaru-eiyutachino-monogatari"  ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>とある英雄たちの物語</td>
             <td style="background-color: white;" id="hanasaka-saisai"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ハナサカサイサイ</td>
             <td style="background-color: white;" id="message"                       ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>メッセージ</td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="imitation-ghost"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Imitation Ghost</td>
+            <td style="background-color: white;" id="reflection"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Reflection</td>
+            <td style="background-color: white;" id="forbidden-paradise"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Forbidden Paradise</td>
+            <td style="background-color: white;" id="mujikaku-apriori"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>無自覚アプリオリ</td>
         </tr>
         <tr>
             <td style="background-color: gray;"></td>
@@ -374,10 +389,10 @@
             <td style="background-color: white;" id="unsung-heroes"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Unsung Heroes</td>
             <td style="background-color: white;" id="zenryoku-anser"                ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>全力アンサー</td>
             <td style="background-color: white;" id="love-letter"                   ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Love Letter</td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="burn-burn"                     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>BURN BURN</td>
+            <td style="background-color: white;" id="yumegayumejanakunaru-sonohimade"><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>夢が夢じゃなくなるその日まで</td>
+            <td style="background-color: white;" id="sweetest-bite"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>SWEETEST BITE</td>
+            <td style="background-color: white;" id="kudaranaiya"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>くだらないや</td>
         </tr>
         <tr>
             <td style="background-color: gray;"></td>
@@ -385,10 +400,10 @@
             <td style="background-color: white;" id="yusaisyoku-yuriika"          ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>有彩色ユリイカ</td>
             <td style="background-color: white;" id="himekuri-mosaic"              ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>ひめくりモザイク</td>
             <td style="background-color: white;" id="gradation"             ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>グラデーション</td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="start-up-stand-up"                     ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>Start up Stand up</td>
+            <td style="background-color: white;" id="ao-to-orange"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>青とオレンジ</td>
+            <td style="background-color: white;" id="white-story"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>White Story</td>
+            <td style="background-color: white;" id="heikosen-no-bigaku"               ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>平行線の美学</td>
         </tr>
 
         <tr>
@@ -505,7 +520,7 @@
             <td style="background-color: white;" id="283-taisou"                 ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>283体操</td>
         </tr>
         <tr>
-            <td style="background-color: gray;"></td>
+            <td style="background-color: white;" id="hoshi-no-koe"           ><button onmouseup='buttonMouseUp(this)'>&#x27F3</button>星の声</td>
             <td style="background-color: gray;"></td>
             <td style="background-color: gray;"></td>
             <td style="background-color: gray;"></td>
@@ -572,12 +587,13 @@
 			<input type="checkbox" checked id="futurity_smile"    onchange="cbOnChange(this)">FUTURITY SMILE   <br>
             <input type="checkbox" checked id="sweet_step"        onchange="cbOnChange(this)">SWEET STEP       <br>
             <input type="checkbox" checked id="synthe_side"       onchange="cbOnChange(this)">Synthe-side      <br>
-            <input type="checkbox" checked id="kamisama_shinda"   onchange="cbOnChange(this)">神様は死んだ、って   <br>
+            <input type="checkbox" checked id="kamisama_shinda"   onchange="cbOnChange(this)">神様は死んだ、って  <br>
             <input type="checkbox" checked id="debi_bs_justice"   onchange="cbOnChange(this)">デビ太郎 VS ジャスティスV<br>
-            <input type="checkbox" checked id="b_health"          onchange="cbOnChange(this)">B☆Health        <br>
+            <input type="checkbox" checked id="b_health"          onchange="cbOnChange(this)">B☆Health         <br>
             <input type="checkbox" checked id="five_stars"        onchange="cbOnChange(this)">THE IDOLM@STER FIVE STARS!!!!!<br>
             <input type="checkbox" checked id="single_crystaloud" onchange="cbOnChange(this)">CRYST@LOUD       <br>
-            <input type="checkbox" checked id="single_shiny-stories" onchange="cbOnChange(this)">Shiny Stories       <br>
+            <input type="checkbox" checked id="single_shiny-stories" onchange="cbOnChange(this)">Shiny Stories <br>
+            <input type="checkbox" checked id="single_hoshi-no-koe"  onchange="cbOnChange(this)">星の声         <br>
 		</fieldset>
         <textarea id="myTextBox" onfocus="if (this.value=='メモ欄') this.value='';" onblur="if (this.value=='') this.value='メモ欄';">メモ欄</textarea>
 	</div>
